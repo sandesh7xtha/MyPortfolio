@@ -3,7 +3,8 @@ import styled, { keyframes } from "styled-components";
 import videoFile from "../../asstes/mix.mp4";
 
 const HomeWrapper = styled.div`
-  height: 100vh;
+  min-height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;

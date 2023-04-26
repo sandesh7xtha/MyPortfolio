@@ -17,19 +17,25 @@ import {
 } from "./Sidebar.css";
 
 import img from "../../asstes/94604439873 (2).png";
-function Sidebar() {
+function Sidebar(props) {
   const [isOpen, setIsOpen] = useState(true);
+
+  const handleMenuIcon = () => {
+    setIsOpen(!isOpen);
+    props.setSidebarSlide(!isOpen);
+  };
 
   const handleHomeClick = () => {
     // handle Home click
+    props.setScrollData("home");
   };
 
   const handleAboutMeClick = () => {
-    // handle About Me click
+    props.setScrollData("aboutMe");
   };
 
   const handleResumeClick = () => {
-    // handle Resume click
+    props.setScrollData("resume");
   };
 
   const handleContactClick = () => {
@@ -40,7 +46,7 @@ function Sidebar() {
     <SidebarContainer isOpen={isOpen}>
       <SidebarHeader>
         <div>My Portfolio</div>
-        <MenuIcon onClick={() => setIsOpen(!isOpen)} />
+        <MenuIcon onClick={handleMenuIcon} />
       </SidebarHeader>
 
       <SidebarContent>
@@ -68,12 +74,12 @@ function Sidebar() {
             </ListItemIconWrapper>
             <ListItemTextPrimary>Resume</ListItemTextPrimary>
           </ListItemWrapper>
-          <ListItemWrapper onClick={handleContactClick}>
+          {/* <ListItemWrapper onClick={handleContactClick}>
             <ListItemIconWrapper>
               <EmailIcon />
             </ListItemIconWrapper>
             <ListItemTextPrimary>Contact</ListItemTextPrimary>
-          </ListItemWrapper>
+          </ListItemWrapper> */}
         </div>
       </SidebarContent>
     </SidebarContainer>

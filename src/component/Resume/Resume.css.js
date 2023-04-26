@@ -131,10 +131,15 @@ export const ProjectLink = styled.a`
   /* add this */
   cursor: pointer;
 `;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+`;
 export const ImageContainer = styled.div`
   width: 31rem;
   height: 20rem;
-  margin-left: 1rem;
   position: relative;
 `;
 
@@ -144,7 +149,7 @@ export const AnimatedImage = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -206,7 +211,7 @@ export const AnimatedImage1 = styled.div`
   left: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border: 1px solid #ddd;
-  animation: fade1 30s linear infinite, shadow 2s ease-in-out infinite alternate;
+  animation: fade1 10s linear infinite, shadow 2s ease-in-out infinite alternate;
 
   @keyframes shadow {
     0% {
@@ -219,20 +224,24 @@ export const AnimatedImage1 = styled.div`
   // Image animation
   @keyframes fade1 {
     0%,
-    25% {
+    15% {
       background-image: url(${imageA});
     }
-    28.33%,
-    53.33% {
+    20%,
+    35% {
       background-image: url(${GifD});
     }
-    56.66%,
-    81.66% {
+    40%,
+    55% {
       background-image: url(${imageB});
     }
-    85%,
-    100% {
+    60%,
+    75% {
       background-image: url(${imageC});
+    }
+    95%,
+    100% {
+      background-image: url(${imageA});
     }
   }
 `;

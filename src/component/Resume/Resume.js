@@ -21,9 +21,30 @@ import {
   ImageContainer,
   AnimatedImage,
   AnimatedImage1,
+  Wrapper,
 } from "./Resume.css";
 
+import { Button } from "@mui/material";
+import PDF from "../../asstes/fypProject/19033572 Sandesh Shrestha - fyp.pdf";
+
+function downloadPDF() {
+  const link = document.createElement("a");
+  link.href = PDF;
+  link.download = "project_document.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 export const Resume = () => {
+  function downloadPDF() {
+    const link = document.createElement("a");
+    link.href = PDF;
+    link.download = "project_document.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <ResumeWrapper>
       <SideBarReusme>
@@ -158,14 +179,20 @@ export const Resume = () => {
                     </ProjectLink>
                   </ProjectDetail>
                 </ProjectDetails>
-                <ImageContainer>
-                  <AnimatedImage />
-                </ImageContainer>
+
+                <Wrapper>
+                  <ImageContainer>
+                    <AnimatedImage />
+                  </ImageContainer>
+                  <Button onClick={downloadPDF} style={{ color: "black" }}>
+                    Download full project document
+                  </Button>
+                </Wrapper>
               </ProjectContainer>
             </Container>
             <Container>
               <ProjectTitle>
-                Conversation Kuraakhani Real Time Chat App{" "}
+                Conversation Kuraakhani Real Time Chat App
               </ProjectTitle>
               <ProjectContainer>
                 <ProjectDetails>
@@ -196,9 +223,11 @@ export const Resume = () => {
                     </ProjectLink>
                   </ProjectDetail>
                 </ProjectDetails>
-                <ImageContainer>
-                  <AnimatedImage1 />
-                </ImageContainer>
+                <Wrapper>
+                  <ImageContainer>
+                    <AnimatedImage1 />
+                  </ImageContainer>
+                </Wrapper>
               </ProjectContainer>
             </Container>
           </ResumeSectionContent>

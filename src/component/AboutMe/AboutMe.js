@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import ComputerIcon from "@mui/icons-material/Computer";
 import Button from "@mui/material/Button";
+import rasumePDF from "../../asstes/SANDESH SHRESTHA.pdf";
 
 const Wrapper = styled.div`
   // background-color: #f5f5f5;
   // background-color: pink;
 
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 const ContentInfoWrapper = styled.div`
@@ -39,6 +40,7 @@ const Title = styled.h2`
 const Paragraph = styled.p`
   font-size: 1.2rem;
   color: #333;
+  margin-right: 1rem;
 `;
 
 const InfoSection = styled.div`
@@ -107,18 +109,38 @@ const StyledButton = styled.button`
 `;
 
 const AboutMe = () => {
+  function downloadResumePDF() {
+    const link = document.createElement("a");
+    link.href = rasumePDF;
+    link.download = "Resume_sandesh_shrestha.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <Wrapper>
       <ContentInfoWrapper>
         <Content>
           <Title>About Me</Title>
           <Paragraph>
-            Hi there! My name is Sandesh Sherestha, and I am a passionate web
-            developer with over 5 years of experience creating innovative and
-            successful websites. My primary focus is to create high-quality,
-            responsive websites that deliver a great user experience. I
-            specialize in front-end development, but I am also skilled in
-            back-end programming and database management.
+            Hello, my name is Sandesh Shrestha and I am a motivated and
+            dedicated web development intern with a particular interest in
+            React.js and Node.js. As a recent graduate with a BSc. (Hons) in
+            Computing, I am eager to apply my knowledge and skills in a
+            professional setting. <br />
+            <br />
+            In terms of my professional skills, I am proficient in Node.js,
+            React, MySQL, Redux, Socket.io, HTML, CSS, and JavaScript.
+            Additionally, I have experience in Bash script programming and
+            Python programming languages. As a creative team player, I am always
+            looking to improve my skills and take on new challenges. <br />
+            <br />I am able to effectively communicate in both English and
+            Nepali, my professional objective is to work in a challenging and
+            rewarding environment where I can contribute to the success of the
+            organization while staying up to date with the latest trends in the
+            IT industry. I have completed a Bachelor's degree in Computing from
+            Itahari International College and Intermediate in Management from
+            Suryodaya English Higher Secondary School.
           </Paragraph>
         </Content>
         <InfoSection>
@@ -144,7 +166,9 @@ const AboutMe = () => {
               <InfoTitle>Phone:</InfoTitle>
               <InfoContent>+977 9817943951</InfoContent>
             </div>
-            <StyledButton variant="contained">Download My Resume</StyledButton>{" "}
+            <StyledButton onClick={downloadResumePDF} variant="contained">
+              Download My Resume
+            </StyledButton>{" "}
           </Info>
         </InfoSection>
       </ContentInfoWrapper>
@@ -169,7 +193,7 @@ const AboutMe = () => {
 export default AboutMe;
 const ServiceSection = styled.div`
   // background-color: pink;
-  padding-top: 2rem;
+  // padding-top: 2rem;
 `;
 const ServiceWrapper = styled.div`
   display: flex;
