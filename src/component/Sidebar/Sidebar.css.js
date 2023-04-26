@@ -10,6 +10,13 @@ export const SidebarContainer = styled.div`
   background-color: #fff;
   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;0.1);
+  @media (max-width: 768px) {
+    background-color:${({ isOpen }) =>
+      isOpen ? "#fff" : "rgba(255, 255, 255, 0)"};
+
+
+  }
+  
 `;
 
 export const SidebarHeader = styled.div`
@@ -21,6 +28,11 @@ export const SidebarHeader = styled.div`
   border-bottom: 1px solid #ddd;
   font-weight: 600;
   font-size: 18px;
+  @media (max-width: 768px) {
+    padding: 0px 8px;
+    height: 56px;
+    font-size: 16px;
+  }
 `;
 
 export const SidebarContent = styled.div`

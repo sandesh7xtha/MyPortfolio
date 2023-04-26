@@ -5,23 +5,19 @@ import Button from "@mui/material/Button";
 import rasumePDF from "../../asstes/SANDESH SHRESTHA.pdf";
 
 const Wrapper = styled.div`
-  // background-color: #f5f5f5;
-  // background-color: pink;
-
   min-height: 100vh;
 `;
 
 const ContentInfoWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  //   align-items: center;
-  // justify-content: center;
-  // background-color: #f5f5f5;
-  // margin-left: 10rem;
   padding: 0rem 1rem;
-  // border-bottom: 1px solid #ccc;
-  // height: 100vh;
   margin: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    // margin: 0rem;
+  }
 `;
 
 const Content = styled.div`
@@ -29,7 +25,9 @@ const Content = styled.div`
   text-align: justify;
   margin-right: 1rem;
 
-  // background-color: blue;
+  @media (max-width: 768px) {
+    margin-right: 0rem;
+  }
 `;
 
 const Title = styled.h2`
@@ -41,6 +39,9 @@ const Paragraph = styled.p`
   font-size: 1.2rem;
   color: #333;
   margin-right: 1rem;
+  @media (max-width: 768px) {
+    margin-right: 0rem;
+  }
 `;
 
 const InfoSection = styled.div`
@@ -59,6 +60,8 @@ const Info = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  // margin-right: 2rem;
+
   div {
     padding: 0.5rem 0rem;
   }
@@ -105,6 +108,9 @@ const StyledButton = styled.button`
     background-color: #a3a3a3;
     color: #f5f5f5;
     cursor: not-allowed;
+  }
+  @media (max-width: 768px) {
+    // flex-direction: column;
   }
 `;
 
@@ -180,9 +186,9 @@ const AboutMe = () => {
           ></ComputerIcon>
           <ServiceTitle>Web Developer</ServiceTitle>
           <ServiceDescription>
-            I specialize in creating high-quality, responsive websites that
-            deliver a great user experience. I am skilled in front-end
-            development, back-end programming, and database management.
+            I can create attractive, responsive websites that provide excellent
+            user experience. I have expertise in front-end development, back-end
+            programming, and database management.
           </ServiceDescription>
         </ServiceWrapper>
       </ServiceSection>
@@ -194,11 +200,18 @@ export default AboutMe;
 const ServiceSection = styled.div`
   // background-color: pink;
   // padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 const ServiceWrapper = styled.div`
   display: flex;
   align-items: center;
   margin: 2rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0rem 1rem;
+  }
 `;
 
 const ServiceTitle = styled.h3`

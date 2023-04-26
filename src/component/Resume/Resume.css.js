@@ -21,15 +21,22 @@ export const ResumeWrapper = styled.div`
   flex-direction: row;
   padding: 20px;
   background-color: #f1f1f1;
+  @media (max-width: 768px) {
+    // padding: 0rem 0rem;
+    margin: 3rem;
+    flex-direction: column;
+    padding: 0px;
+  }
 `;
 
 export const SideBarReusme = styled.div`
-  //   top: 80px;
-  //   padding: 20px;
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   width: 60rem;
+  @media (max-width: 768px) {
+    width: auto;
+  }
 `;
 
 export const ContactInfoWrapper = styled.div`
@@ -50,10 +57,16 @@ export const ContactInfoContent = styled.p`
 
 export const ResumeContainer = styled.div`
   margin: 1rem;
+  @media (max-width: 768px) {
+    margin: 0rem;
+  }
 `;
 
 export const ResumeSection = styled.div`
   // margin-bottom: 20px;
+  @media (max-width: 768px) {
+    margin: 1rem;
+  }
 `;
 
 export const ResumeSectionHeader = styled.h2`
@@ -75,6 +88,9 @@ export const Container = styled.div`
   background-color: #fff;
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  @media (max-width: 768px) {
+    margin: -1rem;
+  }
 `;
 
 export const ProjectContainer = styled.div`
@@ -82,16 +98,16 @@ export const ProjectContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  // margin-bottom: 20px;
-  // padding: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: left;
+  }
 `;
 
 export const ProjectTitle = styled.h3`
   color: #333;
   font-size: 24px;
   font-weight: 700;
-  // margin-bottom: 10px;
 `;
 
 export const ProjectDetails = styled.div`
@@ -99,13 +115,15 @@ export const ProjectDetails = styled.div`
   display: flex;
   flex-direction: column;
   width: 29%;
+  @media (max-width: 768px) {
+    width: auto;
+  }
 `;
 
 export const ProjectSubtitle = styled.h4`
   color: #777;
   font-size: 18px;
   font-weight: 700;
-  // margin-bottom: 5px;
 `;
 
 export const ProjectDetail = styled.div`
@@ -113,8 +131,6 @@ export const ProjectDetail = styled.div`
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 1rem;
-
-  // margin-bottom: 5px;
 `;
 
 export const ProjectLink = styled.a`
@@ -128,7 +144,6 @@ export const ProjectLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
-  /* add this */
   cursor: pointer;
 `;
 
@@ -136,11 +151,19 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
+  @media (max-width: 768px) {
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+  }
 `;
 export const ImageContainer = styled.div`
   width: 31rem;
   height: 20rem;
   position: relative;
+  @media (max-width: 768px) {
+    width: 19.5rem;
+    height: 14rem;
+  }
 `;
 
 export const AnimatedImage = styled.div`

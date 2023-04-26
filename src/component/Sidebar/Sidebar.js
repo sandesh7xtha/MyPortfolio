@@ -46,7 +46,15 @@ function Sidebar(props) {
     <SidebarContainer isOpen={isOpen}>
       <SidebarHeader>
         <div>My Portfolio</div>
-        <MenuIcon onClick={handleMenuIcon} />
+        <MenuIcon
+          style={{
+            fontSize: "1.5rem",
+            "@media(max-width: 768px)": {
+              fontSize: "1rem",
+            },
+          }}
+          onClick={handleMenuIcon}
+        />
       </SidebarHeader>
 
       <SidebarContent>

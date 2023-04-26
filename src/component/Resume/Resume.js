@@ -54,7 +54,6 @@ export const Resume = () => {
             <ul>
               <li>Phone: 9817943951</li>
               <li>Email: sandesh7xtha@gmail.com</li>
-              <li>Language: English, Nepali</li>
             </ul>
           </ContactInfoContent>
         </ContactInfoWrapper>

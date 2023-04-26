@@ -9,6 +9,10 @@ const HomeWrapper = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  @media (max-width: 768px) {
+    // min-height: 100rem;
+    width: auto;
+  }
 `;
 
 const VideoBackground = styled.video`
@@ -62,6 +66,10 @@ const Title = styled.h1`
   text-align: center;
   margin-bottom: 16px;
   animation: ${fadeIn} 5s ease-in-out, ${pulse} 2s ease-in-out infinite;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -71,6 +79,10 @@ const Subtitle = styled.p`
   font-family: "Helvetica Neue", cursive, sans-serif;
 
   animation: ${fadeIn} 5s ease-in-out, ${pulse2} 2s ease-in-out infinite;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const Home = () => {
@@ -80,8 +92,8 @@ export const Home = () => {
         <source src={videoFile} type="video/mp4" />
       </VideoBackground>
       <div>
-        <Title>Welcome to Sandesh Shrestha</Title>
-        <Subtitle>I am Web Developer</Subtitle>
+        <Title>Hello, I am Sandesh Shrestha</Title>
+        <Subtitle>Web Developer</Subtitle>
       </div>
     </HomeWrapper>
   );

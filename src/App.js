@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useEffect, useRef, useState } from "react";
+import styled from "styled-components";
 
 import AboutMe from "./component/AboutMe/AboutMe";
 import { Home } from "./component/Home/Home";
@@ -36,11 +37,11 @@ function App() {
         setSidebarSlide={setSidebarSlide}
       />
 
-      <div
-        style={{
-          marginLeft: sidebarSlide ? "15rem" : "3rem",
-          transition: "all 0.3s ease-in-out",
-        }}
+      <MainDiv
+      // style={{
+      //   marginLeft: sidebarSlide ? "15rem" : "3rem",
+      //   transition: "all 0.3s ease-in-out",
+      // }}
       >
         <div ref={homeRef}>
           <Home />
@@ -51,9 +52,19 @@ function App() {
         <div ref={resumeRef}>
           <Resume />
         </div>
-      </div>
+      </MainDiv>
     </div>
   );
 }
 
 export default App;
+
+const MainDiv = styled.div`
+  margin-left: ${(props) => (props.sidebarSlide ? "15rem" : "3rem")};
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    margin-left: 0rem;
+    // margin-left: ${(props) => (props.sidebarSlide ? "15rem" : "3rem")};
+  }
+`;
