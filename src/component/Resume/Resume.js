@@ -27,15 +27,6 @@ import {
 import { Button } from "@mui/material";
 import PDF from "../../asstes/fypProject/19033572 Sandesh Shrestha - fyp.pdf";
 
-function downloadPDF() {
-  const link = document.createElement("a");
-  link.href = PDF;
-  link.download = "project_document.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-
 export const Resume = () => {
   function downloadPDF() {
     const link = document.createElement("a");

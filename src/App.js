@@ -6,6 +6,7 @@ import AboutMe from "./component/AboutMe/AboutMe";
 import { Home } from "./component/Home/Home";
 import { Resume } from "./component/Resume/Resume";
 import Sidebar from "./component/Sidebar/Sidebar";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [scrollData, setScrollData] = useState("");
@@ -32,16 +33,23 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Sandesh Shrestha</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+        <meta name="description" content="portfolio" />
+      </Helmet>
       <Sidebar
         setScrollData={setScrollData}
         setSidebarSlide={setSidebarSlide}
       />
 
       <MainDiv
-      // style={{
-      //   marginLeft: sidebarSlide ? "15rem" : "3rem",
-      //   transition: "all 0.3s ease-in-out",
-      // }}
+        sidebarSlide={sidebarSlide}
+        // style={{
+        //   marginLeft: sidebarSlide ? "15rem" : "3rem",
+        //   transition: "all 0.3s ease-in-out",
+        // }}
       >
         <div ref={homeRef}>
           <Home />

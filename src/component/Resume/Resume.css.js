@@ -19,7 +19,7 @@ import GifD from "../../asstes/ChatAppConversaion/d.gif";
 export const ResumeWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 0.2rem;
   background-color: #f1f1f1;
   @media (max-width: 768px) {
     // padding: 0rem 0rem;
@@ -33,15 +33,18 @@ export const SideBarReusme = styled.div`
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  width: 60rem;
+  width: 50rem;
+  // text-align: center;
+  // align-items: center;
+
   @media (max-width: 768px) {
     width: auto;
   }
 `;
 
 export const ContactInfoWrapper = styled.div`
-  text-align: left !important;
-  padding-left: 1rem;
+  // text-align: left !important;
+  padding-left: 0.5rem;
 `;
 
 export const ContactInfoHeader = styled.h2`
@@ -114,7 +117,7 @@ export const ProjectDetails = styled.div`
   // margin-top: 10px;
   display: flex;
   flex-direction: column;
-  width: 29%;
+  width: 20rem;
   @media (max-width: 768px) {
     width: auto;
   }
@@ -229,7 +232,7 @@ export const AnimatedImage1 = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);

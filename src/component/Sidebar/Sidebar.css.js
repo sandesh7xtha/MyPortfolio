@@ -5,7 +5,7 @@ export const SidebarContainer = styled.div`
   height: 100%;
   position: fixed;
   top: 0;
-  left: ${({ isOpen }) => (isOpen ? "0" : "-194px")};
+  left: ${({ isOpen }) => (isOpen ? "0" : "-197px")};
   z-index: 999;
   background-color: #fff;
   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,7 @@ export const SidebarHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 64px;
-  padding: 0px 16px;
+  padding: 0px 10px;
   border-bottom: 1px solid #ddd;
   font-weight: 600;
   font-size: 18px;
