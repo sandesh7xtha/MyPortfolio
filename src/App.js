@@ -54,6 +54,7 @@ function App() {
         <div ref={homeRef}>
           <Home />
         </div>
+
         <div ref={aboutMeRef}>
           <AboutMe />
         </div>
@@ -73,6 +74,7 @@ const MainDiv = styled.div`
 
   @media (max-width: 768px) {
     margin-left: 0rem;
-    // margin-left: ${(props) => (props.sidebarSlide ? "15rem" : "3rem")};
+    // width: auto;
+    // margin-left: ${(props) => (props.sidebarSlide ? "0rem" : "0rem")};
   }
 `;

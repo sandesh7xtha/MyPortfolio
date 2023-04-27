@@ -13,6 +13,8 @@ export const SidebarContainer = styled.div`
   @media (max-width: 768px) {
     background-color:${({ isOpen }) =>
       isOpen ? "#fff" : "rgba(255, 255, 255, 0)"};
+      position: fixed;
+
 
 
   }

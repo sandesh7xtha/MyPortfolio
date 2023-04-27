@@ -10,8 +10,8 @@ const HomeWrapper = styled.div`
   align-items: center;
   position: relative;
   @media (max-width: 768px) {
-    // min-height: 100rem;
-    width: auto;
+    // min-height: 60rem;
+    // width: 22.5rem;
   }
 `;
 
@@ -64,11 +64,14 @@ const Title = styled.h1`
   font-weight: bold;
   font-family: "Helvetica Neue", cursive, sans-serif;
   text-align: center;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
   animation: ${fadeIn} 5s ease-in-out, ${pulse} 2s ease-in-out infinite;
 
   @media (max-width: 768px) {
-    font-size: 30px;
+    font-size: 1.6rem;
+    // margin: 0rem 3rem;
+
+    margin-left: 3rem;
   }
 `;
 
@@ -82,6 +85,7 @@ const Subtitle = styled.p`
 
   @media (max-width: 768px) {
     font-size: 18px;
+    margin-left: 3rem;
   }
 `;
 

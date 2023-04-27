@@ -16,7 +16,9 @@ const ContentInfoWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    // margin: 0rem;
+    margin: 0rem;
+
+    margin-left: 2rem;
   }
 `;
 
@@ -210,7 +212,10 @@ const ServiceWrapper = styled.div`
   margin: 2rem;
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 0rem 1rem;
+    margin: 0rem;
+    margin-left: 3rem;
+
+    // padding: 0rem 1rem;
   }
 `;
 
