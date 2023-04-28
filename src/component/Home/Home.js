@@ -23,7 +23,7 @@ const VideoBackground = styled.video`
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: blur(5px);
+  // filter: blur(1px);
 `;
 
 const fadeIn = keyframes`
