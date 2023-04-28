@@ -66,6 +66,7 @@ export const ContactInfoContent = styled.p`
   text-align: left;
   @media (max-width: 768px) {
     font-size: 1rem;
+    margin-top: -0.5rem;
   }
 `;
 
