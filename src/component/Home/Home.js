@@ -70,6 +70,7 @@ const Title = styled.h1`
   @media (max-width: 768px) {
     font-size: 1.6rem;
     // margin: 0rem 3rem;
+    font-weight: 1000;
 
     margin-left: 3rem;
   }

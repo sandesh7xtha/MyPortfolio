@@ -38,11 +38,12 @@ const Title = styled.h2`
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #333;
   margin-right: 1rem;
   @media (max-width: 768px) {
     margin-right: 0rem;
+    font-size: 1rem;
   }
 `;
 
@@ -70,15 +71,21 @@ const Info = styled.div`
 `;
 
 const InfoTitle = styled.span`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #333;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const InfoContent = styled.span`
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #555;
   margin-left: 0.5rem;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 const StyledButton = styled.button`
   background-color: #ffffff;
@@ -181,7 +188,7 @@ const AboutMe = () => {
         </InfoSection>
       </ContentInfoWrapper>
       <ServiceSection>
-        <Title>Service</Title>
+        <Title style={{ marginLeft: "3rem" }}>Service</Title>
         <ServiceWrapper>
           <ComputerIcon
             style={{ fontSize: "80px", margin: "2rem" }}
@@ -205,6 +212,19 @@ const ServiceSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  // @media (max-width: 768px) {
+  //   align-items: center;
+  // }
+`;
+
+const ServiceTitle = styled.h3`
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem;
+  @media (max-width: 768px) {
+    margin: 0rem;
+    font-size: 1.3rem;
+  }
 `;
 const ServiceWrapper = styled.div`
   display: flex;
@@ -219,18 +239,15 @@ const ServiceWrapper = styled.div`
   }
 `;
 
-const ServiceTitle = styled.h3`
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 2rem;
-`;
-
 const ServiceDescription = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   // background-color: pink;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   // margin: 2rem;
   border-radius: 5px;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;

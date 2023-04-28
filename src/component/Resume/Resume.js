@@ -135,10 +135,16 @@ export const Resume = () => {
                 <ProjectDetails>
                   <ProjectSubtitle>Technology Used:</ProjectSubtitle>
                   <ProjectDetail>
-                    React, Node.js, MySQL & Khalti API
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>MySQL</li>
+                    <li>Khalti API</li>
                   </ProjectDetail>
                   <ProjectSubtitle>Tools Used:</ProjectSubtitle>
-                  <ProjectDetail>Xampp, VScode</ProjectDetail>
+                  <ProjectDetail>
+                    <li>Xampp </li>
+                    <li>VScode</li>
+                  </ProjectDetail>
                   <ProjectSubtitle>Features:</ProjectSubtitle>
                   <ProjectDetail>
                     <li>Product sell and buy management</li>
@@ -188,10 +194,17 @@ export const Resume = () => {
                 <ProjectDetails>
                   <ProjectSubtitle>Technology Used:</ProjectSubtitle>
                   <ProjectDetail>
-                    React, Node.js, MongoDB,Redux & socket.IO
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                    <li>Redux</li>
+                    <li>Socket.IO</li>
                   </ProjectDetail>
                   <ProjectSubtitle>Tools Used:</ProjectSubtitle>
-                  <ProjectDetail>MongoDB compass, VScode</ProjectDetail>
+                  <ProjectDetail>
+                    <li>MongoDB Compass</li>
+                    <li>VScode</li>
+                  </ProjectDetail>
                   <ProjectSubtitle>Features:</ProjectSubtitle>
                   <ProjectDetail>
                     <li>Real Time Online Chat</li>

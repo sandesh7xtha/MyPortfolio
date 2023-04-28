@@ -58,7 +58,7 @@ export const ContactInfoHeader = styled.h2`
 `;
 
 export const ContactInfoContent = styled.p`
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #666666;
   text-align: left;
   @media (max-width: 768px) {
@@ -75,6 +75,7 @@ export const ResumeContainer = styled.div`
 
 export const ResumeSection = styled.div`
   // margin-bottom: 20px;
+
   @media (max-width: 768px) {
     margin: 1rem;
   }
@@ -84,15 +85,17 @@ export const ResumeSectionHeader = styled.h2`
   font-size: 1.5rem;
   // margin-bottom: 10px;
   color: #333333;
+
   @media (max-width: 768px) {
     font-size: 1.3rem;
   }
 `;
 
 export const ResumeSectionContent = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   color: #666666;
   text-align: left;
+
   @media (max-width: 768px) {
     font-size: 1rem;
   }
@@ -115,6 +118,7 @@ export const ProjectContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: left;
@@ -125,6 +129,7 @@ export const ProjectTitle = styled.h3`
   color: #333;
   font-size: 1.5rem;
   font-weight: 700;
+
   @media (max-width: 768px) {
     font-size: 1.2em;
     margin: 0.5rem;
@@ -132,18 +137,21 @@ export const ProjectTitle = styled.h3`
 `;
 
 export const ProjectDetails = styled.div`
-  // margin-top: 10px;
   display: flex;
   flex-direction: column;
   width: 20rem;
+  margin-bottom: 1rem;
+
   @media (max-width: 768px) {
     width: auto;
     margin-left: 1rem;
   }
 `;
 
-export const ProjectSubtitle = styled.h4`
+export const ProjectSubtitle = styled.div`
   color: #777;
+  margin: 0.5rem 0rem;
+
   font-size: 1.4rem;
   font-weight: 700;
   @media (max-width: 768px) {
@@ -153,11 +161,12 @@ export const ProjectSubtitle = styled.h4`
 
 export const ProjectDetail = styled.div`
   color: #333;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+
   @media (max-width: 768px) {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 `;
 
