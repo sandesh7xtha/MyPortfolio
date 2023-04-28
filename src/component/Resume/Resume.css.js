@@ -47,11 +47,14 @@ export const SideBarReusme = styled.div`
 export const ContactInfoWrapper = styled.div`
   // text-align: left !important;
   padding-left: 0.5rem;
+  padding-top: 1rem;
 `;
 
-export const ContactInfoHeader = styled.h2`
+export const ContactInfoHeader = styled.div`
   font-size: 1.5rem;
   color: #333333;
+  font-weight: 700;
+
   @media (max-width: 768px) {
     font-size: 1.3rem;
   }
@@ -77,14 +80,15 @@ export const ResumeSection = styled.div`
   // margin-bottom: 20px;
 
   @media (max-width: 768px) {
-    margin: 1rem;
+    margin: 0.4rem;
   }
 `;
 
-export const ResumeSectionHeader = styled.h2`
+export const ResumeSectionHeader = styled.div`
   font-size: 1.5rem;
   // margin-bottom: 10px;
   color: #333333;
+  font-weight: 700;
 
   @media (max-width: 768px) {
     font-size: 1.3rem;
@@ -109,7 +113,7 @@ export const Container = styled.div`
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   @media (max-width: 768px) {
-    margin: -1rem;
+    margin: -0.5rem;
   }
 `;
 
